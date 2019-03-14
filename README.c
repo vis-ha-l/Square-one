@@ -87,4 +87,9 @@ int main(int argc,char *argv[])
     }
     
     return 0;
+    free(arr);
+    for(int z=0;z<6;z++)
+    {
+        free(*(arr+z));
+    }
 }
