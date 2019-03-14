@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// Complete the hourglassSum function below.
+
 int hourglassSum(int arr_rows, int arr_columns, int **arr) {
     
     int run;
