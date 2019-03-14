@@ -36,8 +36,7 @@ int hourglassSum(int arr_rows, int arr_columns, int **arr) {
 
     }
     return high;
-                    
-}
+}    
 
 int main(int argc,char *argv[])
 {
@@ -84,4 +83,9 @@ int main(int argc,char *argv[])
     }
     
     return 0;
+    free(arr);
+    for(int z=0;z<6;z++)
+    {
+        free(*(arr+z));
+    }
 }
