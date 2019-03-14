@@ -38,7 +38,7 @@ int hourglassSum(int arr_rows, int arr_columns, int **arr) {
     return high;
 }    
 
-int main(int argc,char *argv[])
+int main(int argc,unsigned char *argv[])
 {
     int arr_rows = 6;int b;int i;int j=0;int k=0;
     int arr_columns = 6;
@@ -65,7 +65,7 @@ int main(int argc,char *argv[])
     {
         
         for(int y=0;y<6;y++){
-            printf("%d",arr[x][y]);
+            printf("%d  ",arr[x][y]);
 
         }
         printf("\n");    
