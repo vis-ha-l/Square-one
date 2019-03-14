@@ -8,13 +8,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// Complete the hourglassSum function below.
-int hourglassSum(int arr_rows, int arr_columns, int **arr) {
-    
+
+
+int hourglassSum(int arr_rows, int arr_columns, int **arr) 
+{
     int run;
     int sum;
     int high=-64;
-    
     for(int l=0;l<arr_rows-2;l++)
     for(int i=0;i<arr_columns-2;i++)
     {
@@ -34,17 +34,19 @@ int hourglassSum(int arr_rows, int arr_columns, int **arr) {
         }            
         if(sum>high)
         high=sum;
-
     }
     return high;
-                    
-}
+}    
+
 
 int main(int argc,char *argv[])
 {
-    int arr_rows = 6;int b;int i;int j=0;int k=0;
+    int arr_rows = 6;
     int arr_columns = 6;
+    int b; int i;
+    int j=0; int k=0;
     int **arr=malloc(6*(sizeof(int*)));
+    
     for(int z=0;z<6;z++)
     {
         *(arr+z)=malloc(6*(sizeof(int)));
