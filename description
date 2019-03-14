@@ -19,5 +19,5 @@ Input Format:
 Each of the row of array inputs is seperated by n.
 
 Constraints:
-1.-10<A[i][j]<10
+1.0<A[i][j]<100
 2.-1< i,j <6
